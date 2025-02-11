@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<?import javafx.geometry.Insets?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="400.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.smart_daily.LearnDiscoverController">
+    <children>
+        <!-- Header -->
+        <VBox spacing="10" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <padding>
+                <Insets top="10" right="15" bottom="10" left="15"/>
+            </padding>
+            
+            <!-- Header with Back Button and Title -->
+            <HBox alignment="CENTER_LEFT" spacing="15">
+                <Button fx:id="backButton" mnemonicParsing="false" onAction="#handleBack" style="-fx-background-color: #9ABDDC;" text="←" textFill="WHITE">
+                    <font>
+                        <Font size="16.0"/>
+                    </font>
+                </Button>
+                <Label text="Learn &amp; Discover" style="-fx-font-size: 20; -fx-font-weight: bold;"/>
+            </HBox>
+
+            <!-- Add Learning Entry Section -->
+            <VBox spacing="10" style="-fx-background-color: #F8F9FA; -fx-background-radius: 8;">
+                <padding>
+                    <Insets top="15" right="15" bottom="15" left="15"/>
+                </padding>
+                
+                <TextField fx:id="topicField" promptText="Topic/Subject" style="-fx-background-color: white; -fx-background-radius: 4;"/>
+                
+                <ComboBox fx:id="categoryComboBox" promptText="Category" maxWidth="Infinity" style="-fx-background-color: white;"/>
+                
+                <TextArea fx:id="contentArea" promptText="What did you learn? Add notes, insights, or discoveries..." prefRowCount="3" style="-fx-background-color: white; -fx-background-radius: 4;"/>
+                
+                <HBox spacing="10">
+                    <DatePicker fx:id="datePicker" promptText="Date" HBox.hgrow="ALWAYS" style="-fx-background-color: white;"/>
+                    <ComboBox fx:id="importanceComboBox" promptText="Importance" prefWidth="120" style="-fx-background-color: white;"/>
+                </HBox>
+                
+                <Button fx:id="addButton" text="Add Entry" onAction="#handleAddEntry" style="-fx-background-color: #9ABDDC; -fx-text-fill: white; -fx-background-radius: 4;" maxWidth="Infinity"/>
+            </VBox>
+        </VBox>
+
+        <!-- Learning Entries List -->
+        <VBox spacing="10" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="280.0" AnchorPane.bottomAnchor="15.0">
+            <Label text="Your Learning Journey" style="-fx-font-size: 16; -fx-font-weight: bold;"/>
+            
+            <TabPane style="-fx-background-color: transparent;" tabClosingPolicy="UNAVAILABLE" VBox.vgrow="ALWAYS">
+                <tabs>
+                    <Tab text="All Entries">
+                        <ListView fx:id="allEntriesList" style="-fx-background-color: transparent;"/>
+                    </Tab>
+                    <Tab text="By Category">
+                        <ListView fx:id="categorizedList" style="-fx-background-color: transparent;"/>
+                    </Tab>
+                    <Tab text="Important">
+                        <ListView fx:id="importantList" style="-fx-background-color: transparent;"/>
+                    </Tab>
+                </tabs>
+            </TabPane>
+        </VBox>
+    </children>
+</AnchorPane> 

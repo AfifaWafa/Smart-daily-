@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" 
+            prefHeight="500.0" prefWidth="400.0" style="-fx-background-color: white;" 
+            xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" 
+            fx:controller="com.example.smart_daily.ChatController">
+    <children>
+        <VBox spacing="10" AnchorPane.bottomAnchor="10" AnchorPane.leftAnchor="10" 
+              AnchorPane.rightAnchor="10" AnchorPane.topAnchor="10">
+            
+            <!-- Header with back button -->
+            <HBox alignment="CENTER_LEFT" spacing="10" style="-fx-background-color: #9ABDDC; -fx-padding: 10;">
+                <Button fx:id="backButton" text="←" onAction="#handleBack" 
+                        style="-fx-background-color: transparent; -fx-text-fill: white; -fx-font-size: 18;"/>
+                <Label text="Chat Room" style="-fx-font-size: 18; -fx-font-weight: bold; -fx-text-fill: white;"/>
+            </HBox>
+            
+            <!-- Chat area -->
+            <TextArea fx:id="chatArea" VBox.vgrow="ALWAYS" editable="false" 
+                      wrapText="true" 
+                      style="-fx-control-inner-background: #f8f9fa; -fx-font-family: 'Arial'; -fx-font-size: 14;"/>
+            
+            <!-- Message input area -->
+            <HBox spacing="10" style="-fx-background-color: #f8f9fa; -fx-padding: 10;">
+                <TextField fx:id="messageField" HBox.hgrow="ALWAYS" 
+                          promptText="Type your message..." 
+                          style="-fx-background-color: white; -fx-background-radius: 20;"
+                          onAction="#handleSendMessage">
+                    <HBox.margin>
+                        <Insets right="5"/>
+                    </HBox.margin>
+                </TextField>
+                <Button text="Send" onAction="#handleSendMessage" 
+                        style="-fx-background-color: #9ABDDC; -fx-text-fill: white; 
+                               -fx-background-radius: 20; -fx-min-width: 60;"/>
+            </HBox>
+            
+        </VBox>
+    </children>
+</AnchorPane> 

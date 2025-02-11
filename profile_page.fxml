@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="667.0" prefWidth="1034.0" style="-fx-background-color: #b9cbda;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.profile_controller">
+   <children>
+      <AnchorPane layoutX="-2.0" layoutY="-2.0" prefHeight="670.0" prefWidth="423.0" style="-fx-background-color: #8aa8c2;">
+         <children>
+            <ImageView fitHeight="204.0" fitWidth="209.0" layoutX="89.0" layoutY="108.0" pickOnBounds="true" preserveRatio="true" />
+            <Label layoutX="111.0" layoutY="321.0" prefHeight="60.0" prefWidth="176.0" text="SMART DAILY" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="27.0" />
+               </font>
+            </Label>
+            <Circle fill="DODGERBLUE" layoutX="199.0" layoutY="192.0" radius="100.0" stroke="WHITE" strokeType="INSIDE" style="-fx-fill: transparent;" />
+         </children>
+      </AnchorPane>
+      <Label fx:id="USERNAME" layoutX="447.0" layoutY="131.0" text="Username" textFill="#4d869e">
+         <font>
+            <Font name="MS UI Gothic" size="32.0" />
+         </font>
+      </Label>
+      <TextField fx:id="Username_TextField" layoutX="444.0" layoutY="183.0" prefHeight="48.0" prefWidth="389.0" promptText="Username" styleClass="textfield" stylesheets="@Styling.css">
+         <font>
+            <Font size="25.0" />
+         </font></TextField>
+      <Label fx:id="PASS" layoutX="450.0" layoutY="248.0" prefHeight="42.0" prefWidth="152.0" text="Password" textFill="#4d869e">
+         <font>
+            <Font name="MS UI Gothic" size="32.0" />
+         </font>
+      </Label>
+      <TextField fx:id="PAssword_Textfield" layoutX="447.0" layoutY="304.0" prefHeight="56.0" prefWidth="389.0" promptText="Password" styleClass="textfield" stylesheets="@Styling.css">
+         <font>
+            <Font size="25.0" />
+         </font></TextField>
+      <Button fx:id="LOGIN" layoutX="446.0" layoutY="400.0" mnemonicParsing="false" onAction="#handleLoginButtonAction" prefHeight="47.0" prefWidth="383.0" styleClass="loginbutton" stylesheets="@Styling.css" text="Log in" textFill="#2471a4">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Button>
+      <Button fx:id="fpass" layoutX="499.0" layoutY="460.0" mnemonicParsing="false" onAction="#handleForgotPasswordAction" prefHeight="39.0" prefWidth="341.0" style="-fx-background-color: transparent;" text="Forget password?" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="CREATE" layoutX="453.0" layoutY="600.0" mnemonicParsing="false" onAction="#handleCreateAccountAction" prefHeight="42.0" prefWidth="387.0" styleClass="Create" stylesheets="@Styling.css" text="Create new one" textFill="#4d869e">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

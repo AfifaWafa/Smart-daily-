@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="575.0" prefWidth="778.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.smart_daily.RegisterController">
+   <children>
+      <Pane layoutY="-3.0" prefHeight="581.0" prefWidth="200.0" styleClass="pane" stylesheets="@Styling.css" />
+      <Button fx:id="backButton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleBackToLogin" prefHeight="30.0" prefWidth="80.0" style="-fx-background-color: #9ABDDC;" text="Back" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="219.0" layoutY="24.0" prefHeight="17.0" prefWidth="101.0" text="Basic Info" textFill="#1b4aa1">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="First_name_FIELD" layoutX="212.0" layoutY="108.0" prefHeight="25.0" prefWidth="220.0" />
+      <TextField fx:id="Email_Id_FIELD" layoutX="212.0" layoutY="239.0" prefHeight="25.0" prefWidth="220.0" />
+      <TextField fx:id="Country_FIELD" layoutX="212.0" layoutY="370.0" prefHeight="25.0" prefWidth="220.0" />
+      <Label fx:id="Fname_label" layoutX="212.0" layoutY="85.0" text="First Name" />
+      <Label fx:id="Email_label" layoutX="213.0" layoutY="211.0" text="Email id" />
+      <Label fx:id="country_label" layoutX="213.0" layoutY="343.0" text="Country" />
+      <Label fx:id="phonenumber_label" layoutX="215.0" layoutY="279.0" text="Phone Number" />
+      <Label fx:id="Lname_label" layoutX="213.0" layoutY="144.0" text="Last Name" />
+      <TextField fx:id="Last_Name_FIELD" layoutX="212.0" layoutY="170.0" prefHeight="25.0" prefWidth="220.0" />
+      <Label fx:id="dob_label" layoutX="498.0" layoutY="85.0" text="Date Of Birth" />
+      <TextField fx:id="Birth_FIELD" layoutX="498.0" layoutY="108.0" prefHeight="25.0" prefWidth="220.0" />
+      <Label fx:id="postalcode_label" layoutX="498.0" layoutY="153.0" text="Postal Code" />
+      <TextField fx:id="Postal_FIELD" layoutX="498.0" layoutY="170.0" prefHeight="25.0" prefWidth="220.0" />
+      <Label fx:id="userid_label" layoutX="498.0" layoutY="220.0" text="User ID" />
+      <TextField fx:id="ID_FIELD" layoutX="498.0" layoutY="239.0" prefHeight="25.0" prefWidth="220.0" />
+      <Label fx:id="password_label" layoutX="498.0" layoutY="279.0" text="Password" />
+      <TextField fx:id="Password_FIELD" layoutX="498.0" layoutY="305.0" prefHeight="25.0" prefWidth="220.0" />
+      <TextField fx:id="Confirmpasword_FIELD" layoutX="498.0" layoutY="370.0" prefHeight="25.0" prefWidth="220.0" />
+      <Label fx:id="confirmpassword_label" layoutX="505.0" layoutY="343.0" text="Confirm Password" />
+      <Button fx:id="Register_BUTTON" layoutX="417.0" layoutY="451.0" mnemonicParsing="false" onAction="#handleRegister" prefHeight="49.0" prefWidth="101.0" text="Register" />
+      <TextField fx:id="phone_Field" layoutX="212.0" layoutY="311.0" prefHeight="25.0" prefWidth="220.0" />
+   </children>
+</AnchorPane>

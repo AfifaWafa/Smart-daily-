@@ -1,0 +1,255 @@
+.Button {
+    -fx-background-color: #032d4d;
+    -fx-background-radius: 5px;
+}
+
+.label {
+
+    -fx-background-radius: 30;
+}
+
+.background {
+    -fx-background-color: linear-gradient(to left,
+            #23395d,
+            /* Dark Navy */
+            #203354,
+            /* Medium Navy */
+            #1c2e4a,
+            /* Light Navy */
+            #192841,
+            /* Very Light Navy */
+            #152238
+            /* Extra Light Navy */
+        );
+}
+
+.textfield {
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 5px;
+    -fx-border-color: #e0e0e0;
+    -fx-border-radius: 5px;
+    -fx-padding: 8px;
+}
+
+.loginbutton {
+    -fx-background-color: #032d4d;
+    -fx-background-radius: 5px;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.Create {
+    -fx-background-color: #b9cbda;
+    -fx-background-radius: 30;
+    -fx-border-color: white;
+    -fx-border-radius: 30;
+    /* Add this to make the border rounded */
+}
+
+
+
+.pane {
+    -fx-background-color: #192841;
+
+}
+
+
+/* styles.css */
+
+/* General Styling for the Background */
+.root {
+    -fx-background-color: linear-gradient(to bottom right, #ffafbd, #ffc3a0);
+    -fx-font-family: 'Arial';
+}
+
+/* Styling for the Main Text */
+.animated-text {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 8, 0.2, 2, 2);
+}
+
+/* Styling for the Highlighted Text */
+.highlighted-text {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #ff6f61;
+}
+
+.Anchorpane {
+    -fx-background-color: #BDD5E7;
+    -fx-background-radius: 30;
+
+    /* Add this to make the border rounded */
+}
+
+.loginbutton {
+    -fx-background-color: #203354;
+    -fx-background-radius: 30;
+    -fx-border-color: white;
+    -fx-border-radius: 30;
+    /* Add this to make the border rounded */
+}
+
+.box {
+
+    -fx-background-radius: 30;
+    -fx-border-color: white;
+    -fx-border-radius: 30;
+    /* Add this to make the border rounded */
+}
+
+.box2 {
+
+    -fx-background-radius: 30;
+
+    -fx-border-radius: 30;
+    /* Add this to make the border rounded */
+}
+
+/* Add these new styles */
+.main-container {
+    -fx-background-color: white;
+}
+
+.header-container {
+    -fx-background-color: #032d4d;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 5, 0, 0, 1);
+}
+
+.header-title {
+    -fx-text-fill: white;
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+}
+
+.menu-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-cursor: hand;
+}
+
+.content-container {
+    -fx-background-color: #f5f5f5;
+    -fx-padding: 10px;
+}
+
+.menu-card {
+    -fx-background-color: white;
+    -fx-background-radius: 8px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.1), 5, 0, 0, 1);
+    -fx-min-height: 80px;
+    -fx-padding: 10px;
+}
+
+.card-title {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+}
+
+.action-button {
+    -fx-background-color: #032d4d;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 4px;
+    -fx-padding: 8px 15px;
+    -fx-cursor: hand;
+    -fx-min-width: 200px;
+    -fx-max-width: 300px;
+}
+
+.action-button:hover {
+    -fx-background-color: #044272;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 5, 0, 0, 1);
+}
+
+/* Login Page Styles */
+.brand-container {
+    -fx-background-color: linear-gradient(45deg, #2193b0, #6dd5ed);
+    -fx-padding: 30px;
+}
+
+.brand-title {
+    -fx-font-size: 36px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 4, 0, 0, 0);
+}
+
+.brand-subtitle {
+    -fx-font-size: 16px;
+    -fx-text-fill: white;
+    -fx-opacity: 0.9;
+}
+
+.login-container {
+    -fx-background-color: white;
+    -fx-padding: 40px;
+}
+
+.login-title {
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2193b0;
+}
+
+.login-field {
+    -fx-pref-height: 45px;
+    -fx-background-color: #f8f9fa;
+    -fx-background-radius: 5px;
+    -fx-border-color: #e0e0e0;
+    -fx-border-radius: 5px;
+    -fx-font-size: 14px;
+    -fx-padding: 0 15px;
+}
+
+.login-field:focused {
+    -fx-background-color: white;
+    -fx-border-color: #2193b0;
+    -fx-border-width: 2px;
+}
+
+.login-button {
+    -fx-background-color: #2193b0;
+    -fx-text-fill: white;
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-pref-height: 45px;
+    -fx-pref-width: 320px;
+    -fx-background-radius: 5px;
+    -fx-cursor: hand;
+}
+
+.login-button:hover {
+    -fx-background-color: #1c7a91;
+}
+
+.login-button:pressed {
+    -fx-background-color: #166275;
+}
+
+.link-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #2193b0;
+    -fx-font-size: 13px;
+    -fx-cursor: hand;
+    -fx-padding: 5px;
+}
+
+.link-button:hover {
+    -fx-text-fill: #1c7a91;
+    -fx-underline: true;
+}
+
+.text-small {
+    -fx-font-size: 13px;
+    -fx-text-fill: #666666;
+}
+
+/* Logo styles */
+.logo-container ImageView {
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 10, 0, 0, 0);
+}

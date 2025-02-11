@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="741.0" prefWidth="918.0" style="-fx-background-color: WHITE;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.smart_daily.DashboardController">
+   <children>
+      <GridPane>
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+      </GridPane>
+      <HBox layoutX="-2.0" prefHeight="151.0" prefWidth="918.0" style="-fx-background-color: #efefef;">
+         <children>
+            <AnchorPane fx:id="balance_box" prefHeight="151.0" prefWidth="242.0" style="-fx-background-color: #9ABDDC;">
+               <children>
+                  <Label layoutX="52.0" layoutY="28.0" text="Current Balance" textFill="#fffefe">
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="balance_field" layoutX="45.0" layoutY="76.0" prefHeight="49.0" prefWidth="141.0" text="BDT 0.00" textFill="#fffdfd">
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="30.0" prefWidth="120.0" style="-fx-background-color: #AECCE4;" translateX="5.0" translateZ="34.0">
+               <children>
+                  <Label layoutX="23.0" layoutY="67.0" text="Shopping" textFill="#fff9f9">
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="shoppingLabel" layoutX="23.0" layoutY="26.0" prefHeight="27.0" prefWidth="77.0" text="BDT 0.00" textFill="WHITE">
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="151.0" prefWidth="120.0" style="-fx-background-color: #BDD5E7;" translateX="10.0">
+               <children>
+                  <Label layoutX="9.0" layoutY="69.0" prefHeight="27.0" prefWidth="101.0" text="Food &amp; Drinks" textFill="WHITE">
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="foodLabel" layoutX="14.0" layoutY="39.0" prefHeight="17.0" prefWidth="88.0" text="BDT 0.00" textFill="WHITE">
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="bill_box" prefHeight="151.0" prefWidth="120.0" style="-fx-background-color: #D1E5F4;" translateX="15.0">
+               <children>
+                  <Label layoutX="3.0" layoutY="76.0" prefHeight="21.0" prefWidth="112.0" text="Bills &amp; Utilities" textFill="WHITE">
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="billsLabel" layoutX="14.0" layoutY="41.0" prefHeight="17.0" prefWidth="77.0" text="BDT 0.00" textFill="WHITE">
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="151.0" prefWidth="151.0" style="-fx-background-color: #BDD5E7;" translateX="20.0">
+               <children>
+                  <Label layoutX="14.0" layoutY="76.0" prefHeight="19.0" prefWidth="141.0" text="Tuition Fees" textFill="WHITE">
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="tuitionLabel" layoutX="14.0" layoutY="46.0" prefHeight="17.0" prefWidth="77.0" text="BDT 0.00" textFill="WHITE">
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="151.0" prefWidth="137.0" style="-fx-background-color: #AECCE4;" translateX="25.0">
+               <children>
+                  <Label layoutX="22.0" layoutY="74.0" prefHeight="27.0" prefWidth="88.0" text="Other" textFill="WHITE">
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="otherLabel" layoutX="22.0" layoutY="46.0" text="BDT 0.00" textFill="#fffefe">
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+      
+      <TableView fx:id="transactionTable" layoutX="14.0" layoutY="202.0" prefHeight="398.0" prefWidth="498.0">
+         <columns>
+            <TableColumn fx:id="purposeColumn" prefWidth="116.0" text="Purpose" />
+            <TableColumn fx:id="categoryColumn" minWidth="4.0" prefWidth="135.0" text="Category" />
+            <TableColumn fx:id="sumColumn" prefWidth="127.0" text="Sum" />
+            <TableColumn fx:id="dateColumn" prefWidth="119.0" text="Date" />
+         </columns>
+      </TableView>
+      <AnchorPane layoutX="540.0" layoutY="202.0" prefHeight="398.0" prefWidth="358.0" style="-fx-background-color: WHITE;">
+         <children>
+            <AnchorPane prefHeight="50.0" prefWidth="358.0" style="-fx-background-color: #9ABDDC;">
+               <children>
+                  <Label layoutX="21.0" layoutY="17.0" prefHeight="17.0" prefWidth="179.0" text="Add Expenditure" textFill="WHITE">
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <Label layoutX="14.0" layoutY="78.0" text="Details/Note:">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Label>
+            <TextField fx:id="purposeField" layoutX="171.0" layoutY="75.0" prefHeight="28.0" prefWidth="173.0" />
+            <Label layoutX="16.0" layoutY="126.0" prefHeight="28.0" prefWidth="91.0" text="Sum:">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Label>
+            <TextField fx:id="sumField" layoutX="171.0" layoutY="126.0" prefHeight="28.0" prefWidth="173.0" />
+            <Label layoutX="22.0" layoutY="187.0" text="Date:">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Label>
+            <DatePicker fx:id="datePicker" layoutX="22.0" layoutY="215.0" prefHeight="41.0" prefWidth="315.0" promptText="Select Date" />
+            <Label layoutX="28.0" layoutY="254.0" text="Category">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="categoryComboBox" layoutX="28.0" layoutY="254.0" prefWidth="150.0" promptText="Select Category" />
+            <Button layoutX="134.0" layoutY="344.0" mnemonicParsing="false" onAction="#handleSubmit" prefHeight="25.0" prefWidth="126.0" style="-fx-background-color: #9ABDDC;" text="Submit">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Button>
+            <Button fx:id="backButton" layoutX="134.0" layoutY="380.0" mnemonicParsing="false" onAction="#handleBack" prefHeight="25.0" prefWidth="126.0" style="-fx-background-color: #9ABDDC;" text="Go Back" textFill="WHITE">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
